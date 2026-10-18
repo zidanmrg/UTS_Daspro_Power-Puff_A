@@ -24,7 +24,7 @@ begin
   begin
     write('Masukkan PIN Anda (Percobaan ', i, '/3): ');
 
-    // Input PIN disamarkan dengan tanda *
+    // Input PIN disamarkan dengan bintang * ok
     pinInput := '';
     repeat
       ch := readkey;
