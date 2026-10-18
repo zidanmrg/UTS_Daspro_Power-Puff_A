@@ -9,14 +9,14 @@ var
 
 begin
     clrscr;
-    // Inisialisasi awal
+    // User Credentials dan Saldo Awal
     pin := '123456';
     saldo := 1000000; // Saldo awal Rp 1.000.000
     loginBerhasil := false;
-
-    writeln('=== POWERPUFF BANK ===');
     
     // Perulangan 1: Cek PIN maks 3 kali percobaan (while-do)
+    writeln('=== POWERPUFF BANK ===');
+    writeln;
     i := 1;
     while (i <= 3) and (not loginBerhasil) do
     begin
@@ -37,9 +37,9 @@ begin
     end;
 
     // Jika login berhasil, masuk ke menu utama
+    // Perulangan 2: Menu interaktif (repeat-until)
     if loginBerhasil then
     begin
-        // Perulangan 2: Menu interaktif (repeat-until)
         repeat
             clrscr;
             writeln('====================================');
@@ -53,7 +53,7 @@ begin
             write('Pilih menu (1-4): ');
             readln(pilihan);
 
-            // Pengkondisian menggunakan case-of
+            // Pengkondisian menggunakan case-of untuk menangani pilihan menu
             case pilihan of
             1: 
                 begin
