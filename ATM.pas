@@ -100,7 +100,7 @@ begin
             4: 
                 begin
                     writeln;
-                    writeln('Terima kasih telah menggunakan layanan ATM.');
+                    writeln('Silahkan ambil kartu Anda.');
                 end;
             else
                 writeln('Pilihan tidak valid!');
