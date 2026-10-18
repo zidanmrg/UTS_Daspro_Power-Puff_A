@@ -14,13 +14,14 @@ begin
     saldo := 1000000; // Saldo awal Rp 1.000.000
     loginBerhasil := false;
 
-    writeln('=== SELAMAT DATANG DI SIMULASI ATM ===');
+    writeln('=== POWERPUFF BANK ===');
     
     // Perulangan 1: Cek PIN maks 3 kali percobaan (while-do)
     i := 1;
     while (i <= 3) and (not loginBerhasil) do
     begin
-        write('Masukkan PIN Anda (Percobaan ', i, '/3): ');
+        writeln('Masukkan PIN Anda');
+        write('> ');
         readln(pinInput);
 
         if pinInput = pin then
