@@ -36,7 +36,10 @@ begin
         end;
     end;
 
-    // Jika login berhasil, masuk ke menu utama
+    // Jika login berhasil, masuk ke menu utama dibawah ini.
+    // "if statement" ini sangat panjang dan berakhir dengan teks kartu terblokir karena
+    // skenario ini berakhir jika login gagal 3 kali.
+
     // Perulangan 2: Menu interaktif (repeat-until)
     if loginBerhasil then
     begin
